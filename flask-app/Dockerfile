@@ -1,8 +1,8 @@
 #Use Python Image
-FROM python:latest
+FROM python:3.6.8
 
 # Install apt dependencies
-RUN apt update && apt install python3-pip
+RUN apt update && apt install python3-pip -y
 # Copy contents into image
 Copy . .
 # run pip dependencies
